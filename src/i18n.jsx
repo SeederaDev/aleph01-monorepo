@@ -56,7 +56,7 @@ export const DICT = {
     spotlight: {
       eyebrow: "USE-CASE SPOTLIGHT",
       h2: "Purpose-built solutions engineered to meet defense-grade requirements.",
-      body: "From maritime logistics and strategic port sites to mission-critical infrastructure, aleph0I brings on-prem AI and AI-enhanced cyber-resilience where the cloud can't go.",
+      body: "From maritime logistics to mission-critical infrastructure,\naleph0I delivers sovereign on-prem AI and cyber-resilience\nprecisely where the cloud cannot reach.",
       cta: "See use-cases",
     },
     industries: {
@@ -214,7 +214,7 @@ export const DICT = {
     spotlight: {
       eyebrow: "USE-CASE IN PRIMO PIANO",
       h2: "Soluzioni su misura, progettate per soddisfare requisiti defense-grade.",
-      body: "Dalla logistica marittima e i siti portuali strategici alle infrastrutture mission-critical, aleph0I porta AI on-prem e cyber-resilienza potenziata dall'AI dove il cloud non arriva.",
+      body: "Dalla logistica marittima alle infrastrutture mission-critical,\naleph0I porta AI on-prem sovrana e cyber-resilienza\nprecisamente dove il cloud non può arrivare.",
       cta: "Vedi gli use-case",
     },
     industries: {
