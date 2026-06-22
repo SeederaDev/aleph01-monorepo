@@ -46,7 +46,7 @@ export const DICT = {
       h2: "Everything your AI stack needs, from a single partner.",
       items: [
         { t: "Custom dev", d: "We transform enterprise projects into something extraordinary, powered by rapid prototyping from our in-house R&D team." },
-        { t: "LLM orchestration", d: "Our workflow engine is magic. You send the prompt, we handle it for you under the best possible conditions." },
+        { t: "LLM orchestration", d: "Our workflow engine is magic. You send the prompt, we handle it for you under the best possible conditions on-prem." },
         { t: "Big Data", d: "Robust and compliant data architectures designed for European standards, capable of processing terabytes of data in real time: reliably, securely, effortlessly." },
         { t: "Cloud infrastructure", d: "Our unique technology brings cloud computing and storage & backup together seamlessly — powered by a single click." },
         { t: "R&D projects", d: "We turn detailed enterprise requirements into reality, leveraging our dedicated R&D team and proof-of-concepts (POCs)." },
@@ -204,7 +204,7 @@ export const DICT = {
       h2: "Tutto ciò che serve al tuo stack AI, da un unico partner.",
       items: [
         { t: "Custom dev", d: "Trasformiamo i progetti enterprise in qualcosa di straordinario, grazie alla prototipazione rapida del nostro team R&D interno." },
-        { t: "LLM orchestration", d: "Il nostro workflow engine è magia. Tu invii il prompt, noi lo gestiamo per te nelle migliori condizioni possibili." },
+        { t: "LLM orchestration", d: "Il nostro workflow engine è magia. Tu invii il prompt, noi lo gestiamo per te nelle migliori condizioni possibili on-prem." },
         { t: "Big Data", d: "Architetture dati robuste e conformi, pensate per gli standard europei, capaci di processare terabyte di dati in tempo reale: affidabili, sicure, senza sforzo." },
         { t: "Cloud infrastructure", d: "La nostra tecnologia unica unisce cloud computing, storage e backup senza soluzione di continuità — con un solo click." },
         { t: "R&D projects", d: "Trasformiamo requisiti enterprise dettagliati in realtà, sfruttando il nostro team R&D dedicato e proof-of-concept (POC)." },
