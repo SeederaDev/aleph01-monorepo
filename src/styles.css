@@ -138,7 +138,8 @@ section{padding-block:clamp(48px,7vw,104px)}
 .feature__badge{width:24px;height:24px;border-radius:50%;background:var(--orange);display:grid;place-items:center;font-size:9px}
 
 .hero__copy{display:flex;flex-direction:column;justify-content:flex-start;gap:18px}
-.hero__copy h1{font-size:clamp(28px,2.5vw,36px);font-weight:300;max-width:18ch;line-height:1.28;letter-spacing:-.02em}
+.hero__copy h1{font-size:clamp(28px,2.5vw,36px);font-weight:300;max-width:22ch;line-height:1.28;letter-spacing:-.02em}
+.hero__copy h1 .amp{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;letter-spacing:0}
 .hero__copy .btn{align-self:flex-start}
 .hero__cards{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:auto;padding-top:30px;border-top:1px solid var(--line)}
 .minicard{position:relative;padding:6px 24px;display:flex;flex-direction:column;gap:12px;transition:.2s}
