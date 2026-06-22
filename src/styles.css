@@ -108,7 +108,7 @@ section{padding-block:clamp(48px,7vw,104px)}
 
 /* ---------- 1. Hero ---------- */
 .hero{padding-top:clamp(28px,4vw,52px);padding-bottom:clamp(28px,4vw,48px)}
-.hero__grid{display:grid;grid-template-columns:1.04fr 1fr;gap:clamp(24px,3.5vw,52px);align-items:stretch}
+.hero__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(24px,3.5vw,52px);align-items:stretch}
 .feature{border-radius:var(--radius-lg);overflow:hidden}
 .feature__media{
   position:relative;height:100%;min-height:460px;border-radius:var(--radius-lg);overflow:hidden;
@@ -138,8 +138,8 @@ section{padding-block:clamp(48px,7vw,104px)}
 .feature__badge{width:24px;height:24px;border-radius:50%;background:var(--orange);display:grid;place-items:center;font-size:9px}
 
 .hero__copy{display:flex;flex-direction:column;justify-content:flex-start;gap:18px}
-.hero__copy h1{font-size:clamp(28px,2.5vw,36px);font-weight:300;max-width:22ch;line-height:1.28;letter-spacing:-.02em}
-.hero__copy h1 .amp{font-family:var(--mono);font-style:normal;font-weight:500;font-size:.86em;letter-spacing:0}
+.hero__copy h1{font-size:clamp(26px,2.2vw,32px);font-weight:300;max-width:46ch;line-height:1.28;letter-spacing:-.02em}
+.hero__copy h1 .amp{font-family:var(--mono);font-style:normal;font-weight:400;font-size:.86em;letter-spacing:0}
 .hero__copy .btn{align-self:flex-start}
 .hero__cards{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:auto;padding-top:30px;border-top:1px solid var(--line)}
 .minicard{position:relative;padding:6px 24px;display:flex;flex-direction:column;gap:12px;transition:.2s}
