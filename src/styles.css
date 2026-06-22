@@ -499,3 +499,6 @@ section{padding-block:clamp(48px,7vw,104px)}
 
 /* Contact form — input and button identical height */
 .build__form input,.build__form .btn{height:50px;padding-top:0;padding-bottom:0}
+
+/* Matchoice chip — product logo (white background removed) */
+.chip__logo{width:32%;height:auto;display:block;margin:0 auto 8px}
