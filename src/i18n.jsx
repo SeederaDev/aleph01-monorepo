@@ -32,7 +32,7 @@ export const DICT = {
     matchoice: {
       eyebrow: "THE mtx SUITE",
       h2: "Others bolt models onto the cloud. Our edge? An agnostic orchestrator.",
-      body: "matchoice (mtx) routes any open-weight or frontier LLM across on-prem and cloud — AWQ quantization, vLLM paged-attention, KV-cache optimization, hardware-agnostic. One middleware, every model.",
+      body: "The mtx middleware optimizes how AI workloads are managed — tuning routing to your user equipments (UEs) and allocation needs. All made possible by mtx's abstraction layer: capacity planning.",
       cta: "Discover matchoice",
     },
     onprem: {
@@ -190,7 +190,7 @@ export const DICT = {
     matchoice: {
       eyebrow: "LA SUITE mtx",
       h2: "Gli altri incollano i modelli al cloud. Il nostro vantaggio? Un orchestratore agnostico.",
-      body: "matchoice (mtx) instrada qualsiasi LLM open-weight o frontier tra on-prem e cloud — quantizzazione AWQ, paged-attention vLLM, ottimizzazione della KV-cache, hardware-agnostic. Un solo middleware, ogni modello.",
+      body: "Il middleware mtx ottimizza la gestione degli AI workload — adattando il routing agli user equipment (UE) del cliente e alle necessità di allocazione. Tutto reso possibile dal livello di astrazione di mtx: il capacity planning.",
       cta: "Scopri matchoice",
     },
     onprem: {
