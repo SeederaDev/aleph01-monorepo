@@ -20,7 +20,7 @@ export const DICT = {
     },
     hero: {
       eyebrow: "AI & CYBER FOR RESILIENCE",
-      h1: "aleph0I delivers agnostic AI & cloud orchestration that doesn't flake when things get real.",
+      h1: "aleph0I delivers self-hosted and managed solutions, covering everything from SDN to AI workload orchestration.",
       cta: "Get early access",
       card1Kicker: "THE mtx SUITE",
       card1: "matchoice — one agnostic gateway for every model, on-prem or cloud.",
@@ -32,7 +32,7 @@ export const DICT = {
     matchoice: {
       eyebrow: "THE mtx SUITE",
       h2: "Others bolt models onto the cloud. Our edge? An agnostic orchestrator.",
-      body: "matchoice (mtx) routes any open-weight or frontier LLM across on-prem and cloud — AWQ quantization, vLLM paged-attention, KV-cache optimization, hardware-agnostic. One middleware, every model.",
+      body: "The mtx middleware optimizes how AI workloads are managed — tuning routing to your user equipments (UEs) and allocation needs. All made possible by mtx's abstraction layer: capacity planning.",
       cta: "Discover matchoice",
     },
     onprem: {
@@ -46,7 +46,7 @@ export const DICT = {
       h2: "Everything your AI stack needs, from a single partner.",
       items: [
         { t: "Custom dev", d: "We transform enterprise projects into something extraordinary, powered by rapid prototyping from our in-house R&D team." },
-        { t: "LLM orchestration", d: "Our workflow engine is magic. You send the prompt, we handle it for you under the best possible conditions." },
+        { t: "LLM orchestration", d: "Our workflow engine is magic. You send the prompt, we handle it for you under the best possible conditions on-prem." },
         { t: "Big Data", d: "Robust and compliant data architectures designed for European standards, capable of processing terabytes of data in real time: reliably, securely, effortlessly." },
         { t: "Cloud infrastructure", d: "Our unique technology brings cloud computing and storage & backup together seamlessly — powered by a single click." },
         { t: "R&D projects", d: "We turn detailed enterprise requirements into reality, leveraging our dedicated R&D team and proof-of-concepts (POCs)." },
@@ -55,8 +55,8 @@ export const DICT = {
     },
     spotlight: {
       eyebrow: "USE-CASE SPOTLIGHT",
-      h2: "Defense-grade resilience,\nfrom port to perimeter.",
-      body: "From maritime logistics and strategic port sites to mission-critical infrastructure, aleph0I brings on-prem AI and AI-enhanced cyber-resilience where the cloud can't go.",
+      h2: "Purpose-built solutions engineered to meet defense-grade requirements.",
+      body: "From maritime logistics to mission-critical infrastructure,\naleph0I delivers sovereign on-prem AI and cyber-resilience\nprecisely where the cloud cannot reach.",
       cta: "See use-cases",
     },
     industries: {
@@ -178,7 +178,7 @@ export const DICT = {
     },
     hero: {
       eyebrow: "AI & CYBER PER LA RESILIENZA",
-      h1: "aleph0I offre orchestrazione AI & cloud agnostica che non vacilla quando le cose si fanno serie.",
+      h1: "aleph0I offre soluzioni self-hosted e gestite, coprendo tutto, dall'SDN all'orchestrazione degli AI workload.",
       cta: "Accesso anticipato",
       card1Kicker: "LA SUITE mtx",
       card1: "matchoice — un unico gateway agnostico per ogni modello, on-prem o cloud.",
@@ -190,7 +190,7 @@ export const DICT = {
     matchoice: {
       eyebrow: "LA SUITE mtx",
       h2: "Gli altri incollano i modelli al cloud. Il nostro vantaggio? Un orchestratore agnostico.",
-      body: "matchoice (mtx) instrada qualsiasi LLM open-weight o frontier tra on-prem e cloud — quantizzazione AWQ, paged-attention vLLM, ottimizzazione della KV-cache, hardware-agnostic. Un solo middleware, ogni modello.",
+      body: "Il middleware mtx ottimizza la gestione degli AI workload — adattando il routing agli user equipment (UE) del cliente e alle necessità di allocazione. Tutto reso possibile dal livello di astrazione di mtx: il capacity planning.",
       cta: "Scopri matchoice",
     },
     onprem: {
@@ -204,7 +204,7 @@ export const DICT = {
       h2: "Tutto ciò che serve al tuo stack AI, da un unico partner.",
       items: [
         { t: "Custom dev", d: "Trasformiamo i progetti enterprise in qualcosa di straordinario, grazie alla prototipazione rapida del nostro team R&D interno." },
-        { t: "LLM orchestration", d: "Il nostro workflow engine è magia. Tu invii il prompt, noi lo gestiamo per te nelle migliori condizioni possibili." },
+        { t: "LLM orchestration", d: "Il nostro workflow engine è magia. Tu invii il prompt, noi lo gestiamo per te nelle migliori condizioni possibili on-prem." },
         { t: "Big Data", d: "Architetture dati robuste e conformi, pensate per gli standard europei, capaci di processare terabyte di dati in tempo reale: affidabili, sicure, senza sforzo." },
         { t: "Cloud infrastructure", d: "La nostra tecnologia unica unisce cloud computing, storage e backup senza soluzione di continuità — con un solo click." },
         { t: "R&D projects", d: "Trasformiamo requisiti enterprise dettagliati in realtà, sfruttando il nostro team R&D dedicato e proof-of-concept (POC)." },
@@ -213,8 +213,8 @@ export const DICT = {
     },
     spotlight: {
       eyebrow: "USE-CASE IN PRIMO PIANO",
-      h2: "Resilienza defense-grade,\ndal porto al perimetro.",
-      body: "Dalla logistica marittima e i siti portuali strategici alle infrastrutture mission-critical, aleph0I porta AI on-prem e cyber-resilienza potenziata dall'AI dove il cloud non arriva.",
+      h2: "Soluzioni su misura, progettate per soddisfare requisiti defense-grade.",
+      body: "Dalla logistica marittima alle infrastrutture mission-critical,\naleph0I porta AI on-prem sovrana e cyber-resilienza\nprecisamente dove il cloud non può arrivare.",
       cta: "Vedi gli use-case",
     },
     industries: {

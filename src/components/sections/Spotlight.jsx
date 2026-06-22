@@ -14,7 +14,7 @@ export default function Spotlight() {
             <h2><Lines text={t.spotlight.h2} /></h2>
             <a href="#industries" className="btn btn--primary btn--sm">{t.spotlight.cta}</a>
           </div>
-          <p className="spotlight__desc">{t.spotlight.body}</p>
+          <p className="spotlight__desc"><Lines text={t.spotlight.body} /></p>
           <span className="spotlight__partner"><b>aleph0I</b><i>×</i><b className="minicard__groq">mtx</b></span>
         </div>
       </div>
