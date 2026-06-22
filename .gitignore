@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# local editor / tooling config
+.claude/
+
+# working artifacts & confidential source material (kept OUT of the repo):
+# recon screenshots, design tokens, and the original company/investor decks
+docs/
+
+# logs & env
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db

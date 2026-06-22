@@ -1,0 +1,10 @@
+export { default as Hero } from "./Hero.jsx";
+export { default as Logos } from "./Logos.jsx";
+export { default as Philosophy } from "./Philosophy.jsx";
+export { default as Matchoice } from "./Matchoice.jsx";
+export { default as OnPrem } from "./OnPrem.jsx";
+export { default as Services } from "./Services.jsx";
+export { default as Spotlight } from "./Spotlight.jsx";
+export { default as Industries } from "./Industries.jsx";
+export { default as Code } from "./Code.jsx";
+export { default as Contact } from "./Contact.jsx";
