@@ -227,7 +227,7 @@ section{padding-block:clamp(48px,7vw,104px)}
 
 /* ---------- 7. Partnership spotlight ---------- */
 .spotlight{padding-block:clamp(20px,3vw,40px)}
-.spotlight__card{position:relative;border-radius:var(--radius-xl);overflow:hidden;min-height:520px;background:#15161a;color:#fff;padding:clamp(28px,3.5vw,52px)}
+.spotlight__card{position:relative;display:flex;flex-direction:column;border-radius:var(--radius-xl);overflow:hidden;min-height:520px;background:#15161a;color:#fff;padding:clamp(28px,3.5vw,52px)}
 .spotlight__scene{position:absolute;inset:0;background:radial-gradient(120% 100% at 70% 30%,#3a3d44 0%,#191a1e 60%,#0d0e10 100%)}
 .spotlight__car{position:absolute;right:6%;top:42%;width:50%;height:34%;
   background:linear-gradient(160deg,#ff7a2e 0%,#e24700 55%,#1a1a1a 56%);
@@ -235,7 +235,7 @@ section{padding-block:clamp(48px,7vw,104px)}
   border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.5)}
 .spotlight__top{position:relative;display:flex;flex-direction:column;gap:18px;align-items:flex-start;max-width:30ch}
 .spotlight__top h2{font-size:clamp(24px,2.6vw,36px);color:#fff;font-weight:300}
-.spotlight__desc{position:absolute;left:clamp(28px,3.5vw,52px);bottom:clamp(28px,3.5vw,52px);max-width:42ch;color:rgba(255,255,255,.7);font-size:14px;line-height:1.6}
+.spotlight__desc{margin-top:auto;padding-top:clamp(24px,3vw,40px);max-width:42ch;color:rgba(255,255,255,.7);font-size:14px;line-height:1.6}
 .spotlight__partner{position:absolute;right:clamp(28px,3.5vw,52px);bottom:clamp(28px,3.5vw,52px);display:flex;align-items:center;gap:8px;font-weight:700;color:#fff}
 .spotlight__partner i{color:rgba(255,255,255,.4);font-weight:300;font-style:normal}
 
