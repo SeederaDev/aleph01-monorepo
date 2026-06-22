@@ -20,7 +20,7 @@ export const DICT = {
     },
     hero: {
       eyebrow: "AI & CYBER FOR RESILIENCE",
-      h1: "aleph0I delivers self-hosted and managed solutions, covering everything from SDN to AI workload orchestration.",
+      h1: "aleph0I delivers self-hosted & managed solutions, covering everything from SDN to AI workload orchestration.",
       cta: "Get early access",
       card1Kicker: "THE mtx SUITE",
       card1: "matchoice — one agnostic gateway for every model, on-prem or cloud.",
@@ -178,7 +178,7 @@ export const DICT = {
     },
     hero: {
       eyebrow: "AI & CYBER PER LA RESILIENZA",
-      h1: "aleph0I offre soluzioni self-hosted e gestite, coprendo tutto, dall'SDN all'orchestrazione degli AI workload.",
+      h1: "aleph0I offre soluzioni self-hosted & gestite, coprendo tutto, dall'SDN all'orchestrazione degli AI workload.",
       cta: "Accesso anticipato",
       card1Kicker: "LA SUITE mtx",
       card1: "matchoice — un unico gateway agnostico per ogni modello, on-prem o cloud.",
