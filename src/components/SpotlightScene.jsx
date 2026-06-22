@@ -26,7 +26,7 @@ export default function SpotlightScene() {
     mount.appendChild(renderer.domElement);
 
     const group = new THREE.Group();
-    group.position.x = 1.2;            // sit on the right half of the card
+    group.position.x = 2.4;            // sit on the right side of the card
     group.rotation.x = 0;
     scene.add(group);
 
