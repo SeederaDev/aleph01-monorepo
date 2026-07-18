@@ -16,7 +16,7 @@ export default function Contact() {
             <input type="email" required placeholder={t.contact.placeholder} aria-label="email" />
             <button type="submit" className="btn btn--dark">{sent ? "✓" : t.contact.cta}</button>
           </form>
-          <span className="build__note">{t.contact.note}</span>
+          <span className="build__note">{t.contact.note}<br />VAT IT06060730659</span>
         </div>
       </div>
     </section>

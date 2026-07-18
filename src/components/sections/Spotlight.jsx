@@ -1,6 +1,8 @@
+import { lazy, Suspense } from "react";
 import { useT } from "../../i18n.jsx";
 import { Lines } from "../../lib/ui.jsx";
-import SpotlightScene from "../SpotlightScene.jsx";
+
+const SpotlightScene = lazy(() => import("../SpotlightScene.jsx"));
 
 export default function Spotlight() {
   const { t } = useT();
@@ -8,7 +10,9 @@ export default function Spotlight() {
     <section className="spotlight">
       <div className="container">
         <div className="spotlight__card reveal">
-          <div className="spotlight__scene" aria-hidden="true"><SpotlightScene /></div>
+          <div className="spotlight__scene" aria-hidden="true">
+            <Suspense fallback={null}><SpotlightScene /></Suspense>
+          </div>
           <div className="spotlight__top">
             <span className="eyebrow eyebrow--orange">{t.spotlight.eyebrow}</span>
             <h2><Lines text={t.spotlight.h2} /></h2>

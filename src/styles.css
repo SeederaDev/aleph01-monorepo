@@ -108,7 +108,7 @@ section{padding-block:clamp(48px,7vw,104px)}
 
 /* ---------- 1. Hero ---------- */
 .hero{padding-top:clamp(28px,4vw,52px);padding-bottom:clamp(28px,4vw,48px)}
-.hero__grid{display:grid;grid-template-columns:1.04fr 1fr;gap:clamp(24px,3.5vw,52px);align-items:stretch}
+.hero__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(24px,3.5vw,52px);align-items:stretch}
 .feature{border-radius:var(--radius-lg);overflow:hidden}
 .feature__media{
   position:relative;height:100%;min-height:460px;border-radius:var(--radius-lg);overflow:hidden;
@@ -138,8 +138,10 @@ section{padding-block:clamp(48px,7vw,104px)}
 .feature__badge{width:24px;height:24px;border-radius:50%;background:var(--orange);display:grid;place-items:center;font-size:9px}
 
 .hero__copy{display:flex;flex-direction:column;justify-content:flex-start;gap:18px}
-.hero__copy h1{font-size:clamp(28px,2.5vw,36px);font-weight:300;max-width:18ch;line-height:1.28;letter-spacing:-.02em}
+.hero__copy h1{font-size:clamp(26px,2.2vw,32px);font-weight:300;max-width:46ch;line-height:1.28;letter-spacing:-.02em}
+.hero__copy h1 .amp{font-family:var(--mono);font-style:normal;font-weight:400;font-size:.86em;letter-spacing:0}
 .hero__copy .btn{align-self:flex-start}
+.hero__copy .btn--primary:hover{background:#6b6b6b}
 .hero__cards{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:auto;padding-top:30px;border-top:1px solid var(--line)}
 .minicard{position:relative;padding:6px 24px;display:flex;flex-direction:column;gap:12px;transition:.2s}
 .minicard+.minicard{border-left:1px solid var(--line)}
@@ -186,7 +188,7 @@ section{padding-block:clamp(48px,7vw,104px)}
   border:1px solid #8a5a33;display:grid;place-items:center;}
 .chip__label{text-align:center;color:#3a2c1f}
 .chip__word{font-weight:700;font-size:30px;letter-spacing:-.05em;display:block;color:#241a12}
-.chip__label small{font-family:var(--mono);font-size:10px;letter-spacing:.04em}
+.chip__label small{font-family:var(--mono);font-size:12px;letter-spacing:.04em}
 .chip__pins{position:absolute;background-image:repeating-linear-gradient(90deg,#b98a5e 0 4px,transparent 4px 11px)}
 .chip__pins--t{top:-7px;left:14%;right:14%;height:8px}
 .chip__pins--b{bottom:-7px;left:14%;right:14%;height:8px}
@@ -404,7 +406,7 @@ section{padding-block:clamp(48px,7vw,104px)}
 /* Contact form */
 .eyebrow--onorange{color:rgba(255,255,255,.85)}
 .build__form{display:flex;gap:10px;width:min(440px,100%);margin-top:4px}
-.build__form input{flex:1;border:0;border-radius:999px;padding:13px 20px;font-family:var(--font);font-size:15px;background:rgba(255,255,255,.96);color:var(--ink)}
+.build__form input{flex:1 1 auto;border:0;border-radius:999px;padding:13px 20px;font-family:var(--font);font-size:15px;background:#fff;color:var(--ink);text-align:center}
 .build__form input:focus{outline:2px solid rgba(0,0,0,.35)}
 .build__note{font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.88);margin-top:6px}
 
@@ -458,8 +460,17 @@ section{padding-block:clamp(48px,7vw,104px)}
    Hero 3D canvas
    ============================================================ */
 .feature__media--3d{background:radial-gradient(120% 120% at 50% 35%,#1b2533 0%,#0c1016 55%,#070a0e 100%)}
-.hero3d{position:absolute;inset:0;z-index:1}
-.hero3d canvas{display:block;width:100%;height:100%}
+/* Canvas footprint is much bigger than the visual card — gives the drag interaction
+   room to stretch a vertex over the navbar above and past the copy, logos bar and
+   whatever else sits below, without it ever leaving the camera frustum and
+   disappearing. The top/bottom insets grew by the same amount off the original
+   (0.15→2.65, 0.55→3.05) so the card's center stays put, and the FOV was widened
+   to match in lockstep (see Hero3D.jsx) so the tesseract's resting size/position
+   look is pixel-identical to before — only the invisible drag margin got bigger.
+   z-index is bumped past the sticky navbar's (50) so a dragged vertex actually
+   renders on top of it instead of hiding underneath. */
+.hero3d{position:absolute;top:-265%;left:-90%;right:-90%;bottom:-305%;z-index:51;pointer-events:none}
+.hero3d canvas{display:block;width:100%;height:100%;pointer-events:none}
 .feature__media--3d .feature__tag,
 .feature__media--3d .feature__caption{z-index:3}
 
@@ -497,8 +508,5 @@ section{padding-block:clamp(48px,7vw,104px)}
 /* Spotlight radar canvas */
 .spot3d{position:absolute;inset:0}
 
-/* Contact form — input and button identical height */
-.build__form input,.build__form .btn{height:50px;padding-top:0;padding-bottom:0}
-
-/* Matchoice chip — product logo (white background removed) */
-.chip__logo{width:32%;height:auto;display:block;margin:0 auto 8px}
+/* Contact form — input and button identical height, aligned on the same row */
+.build__form input,.build__form .btn{height:50px;padding-top:0;padding-bottom:0;margin-top:0}

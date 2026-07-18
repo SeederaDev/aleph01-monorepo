@@ -21,11 +21,7 @@ export default function Matchoice() {
               <div className="chip__pins chip__pins--b"></div>
               <div className="chip__pins chip__pins--l"></div>
               <div className="chip__pins chip__pins--r"></div>
-              <div className="chip__label">
-                <img src="/img/logo-matchoice.png" alt="matchoice" className="chip__logo" />
-                <span className="chip__word">mtx</span>
-                <small>MATCHOICE · A01</small>
-              </div>
+              <div className="chip__label"><span className="chip__word">mtx</span><small>MATCHOICE · A0I</small></div>
             </div>
           </div>
         </div>

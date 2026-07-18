@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useT } from "../i18n.jsx";
 
-const SITE_URL = "https://aleph0I.com";
+const SITE_URL = "https://aleph01.com";
 
 /* Ensure a <meta>/<link> tag exists and set its attribute. */
 function upsert(selector, create, attr, value) {
