@@ -6,7 +6,7 @@ import {
 /* Default page composition. Swap/reorder/trim this list to re-assemble the page. */
 export const defaultSections = [
   Hero,
-  Logos,
+  // Logos,  // hidden — partner/university logo carousel (re-add to restore)
   Philosophy,
   Matchoice,
   OnPrem,
