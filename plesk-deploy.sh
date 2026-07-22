@@ -22,8 +22,10 @@ fi
 
 echo "[deploy] node: $(command -v node || echo 'not found')  npm: $(command -v npm || echo 'not found')"
 
-echo "[deploy] installing dependencies (npm ci)"
-npm ci
+echo "[deploy] installing dependencies (npm ci --include=dev)"
+# --include=dev: Vite is a devDependency; Plesk may run with NODE_ENV=production,
+# which would otherwise skip it and break the build (vite: not found).
+npm ci --include=dev
 
 echo "[deploy] building (npm run build)"
 npm run build
