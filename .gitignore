@@ -17,6 +17,3 @@ docs/
 .env.*
 .DS_Store
 Thumbs.db
-
-# Plesk/Passenger restart trigger
-tmp/
