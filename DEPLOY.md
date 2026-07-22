@@ -38,17 +38,17 @@ Node app on top of it.
 
 ### Auto-deploy on push (Plesk Git)
 
-In **Git → Pull Updates / Deploy actions**, enable automatic deployment and set
-the deploy actions to:
+In **Git → Repository settings**, enable **"Deploy changes automatically when a
+new commit appears"** and set the **Additional deployment actions** to:
 
 ```bash
-npm ci
-npm run build
+bash plesk-deploy.sh
 ```
 
-Then, after each pull, Plesk rebuilds `dist/` automatically. Restart the Node
-app so it picks up the new build (Plesk can be configured to touch
-`tmp/restart.txt`, or restart the app in the Node.js panel).
+`plesk-deploy.sh` (in the repo root) runs `npm ci` → `npm run build` →
+`touch tmp/restart.txt`. That last touch tells Passenger to restart the Node app
+on the next request, so each push rebuilds `dist/` and goes live automatically —
+no manual steps.
 
 > Why a Node app instead of pointing the docroot at `dist/`? Either works for a
 > purely static site, but the Node app means the **build output is decoupled
