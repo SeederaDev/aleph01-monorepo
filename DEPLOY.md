@@ -13,30 +13,34 @@ raw source.
 
 ## Recommended — Plesk Git → build → static docroot
 
-This matches the existing Plesk setup (Git repo deploys `main` automatically to
-`httpdocs`). Two changes turn the manual flow into a fully automatic one.
+Two Plesk fields are involved, in **two different pages** — don't confuse them:
 
-**1. Add the build step.** In **Domains → aleph01.com → Git →** repo
-**Settings** (the sliders icon), under **Additional deployment actions**, put:
+| Field | Where | Value |
+| --- | --- | --- |
+| **Server path** (Git) | Git → repo **Settings** | `/httpdocs` — where Plesk drops the repo |
+| **Document root** (site) | **Hosting & DNS → Hosting Settings** | `/httpdocs/dist` — what nginx serves |
+
+So: Plesk drops the repo in `/httpdocs`, the build produces `/httpdocs/dist`, and
+nginx serves `/httpdocs/dist`. Source and `node_modules` stay **above** the web
+root, never exposed.
+
+**1. Build step.** Git → repo **Settings** → check **Enable additional
+deployment actions** → **Deploy actions**:
 
 ```bash
-npm ci --include=dev
-npm run build
+bash plesk-deploy.sh
 ```
 
-`--include=dev` is required: Vite lives in `devDependencies`, and if Plesk runs
-with `NODE_ENV=production` a plain `npm ci` would skip it and the build would
-fail with `vite: not found`.
+`plesk-deploy.sh` puts Node on PATH (this server manages it with **nodenv**, so a
+bare `npm` isn't found — the script probes nodenv/nvm/Plesk-node), then runs
+`npm ci --include=dev` (Vite is a devDependency; without `--include=dev` a
+`NODE_ENV=production` shell skips it → `vite: not found`) and `npm run build`.
 
-**2. Point the web root at the build output.** In **Domains → aleph01.com →
-Hosting & DNS → Hosting settings**, set **Document root** from `httpdocs` to:
-
-```
-httpdocs/dist
-```
+**2. Document root.** Hosting & DNS → Hosting Settings → **Document root** →
+`/httpdocs/dist`.
 
 Now the flow is: push to `main` → Plesk pulls → runs the build → nginx serves
-`httpdocs/dist`. No manual copying, ever.
+`/httpdocs/dist`. No manual copying, ever.
 
 ### First-time order (avoids a broken window)
 
